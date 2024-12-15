@@ -1,0 +1,8 @@
+11,Devil wears prade,Nicole Kidman,Los Angeles,false
+12,The Fault in Our Stars,John Green,Tragedy,false
+13,Book no 13,Author 13,Genre 13,false
+15,Book no 13,Author 13,Genre 15,false
+16,Book no 13,Author 13,Genre 16,false
+3,toheed asghar,,adventure,false
+39,this is title,,this is genre,False
+45,booktitlw,author,fiction,True
