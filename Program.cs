@@ -50,7 +50,6 @@ namespace LibarayConsoleApplication
         }
 
 
-        // Works fine
         public void AddBook(Book book)
         {
             // First cheking whether book with same id already exists in file or not
@@ -79,7 +78,8 @@ namespace LibarayConsoleApplication
             fin.Close();
         }
 
-        // Works fine
+
+        
         public void RemoveBook(int bookid)
         {
             FileStream fin = new FileStream("Books.txt", FileMode.Open, FileAccess.Read);
@@ -138,7 +138,8 @@ namespace LibarayConsoleApplication
             File.Delete("TempBooks.txt"); // deleting TempData.txt file after use
         }
 
-        // Works fine
+
+        
         public void UpdateBook(int id)
         {
             FileStream fin = new FileStream("Books.txt", FileMode.Open, FileAccess.Read);
@@ -206,7 +207,7 @@ namespace LibarayConsoleApplication
             File.Delete("TempBooks.txt");
         }
 
-        // Works fine
+     
         public List<Borrower> GetAllBorrowers()
         {
 
@@ -232,7 +233,8 @@ namespace LibarayConsoleApplication
             return borrowers;
         }
 
-        // Works fine
+
+        
         public List<Book> GetAllBooks()
         {
 
@@ -263,7 +265,8 @@ namespace LibarayConsoleApplication
             return books;
         }
 
-        // Works fine
+
+        
         public Book GetBookById(int bookid)
         {
             FileStream fin = new FileStream("Books.txt", FileMode.Open, FileAccess.Read);
@@ -293,7 +296,8 @@ namespace LibarayConsoleApplication
             return null;
         }
 
-        // WOrks fine
+
+        
         public List<Book> SearchBook(string query)
         {
             FileStream fin = new FileStream("Books.txt", FileMode.Open, FileAccess.Read);
@@ -325,7 +329,7 @@ namespace LibarayConsoleApplication
             return books;
         }
 
-        // Works fine
+        
         public void RegisterBorrower(Borrower borrower)
         {
 
@@ -357,7 +361,8 @@ namespace LibarayConsoleApplication
             fin.Close();
         }
 
-        // WOrks fine
+
+        
         public void UpdateBorrower(int id) 
         {
             FileStream fin = new FileStream("Borrowers.txt", FileMode.OpenOrCreate, FileAccess.Read);
@@ -410,7 +415,8 @@ namespace LibarayConsoleApplication
             File.Delete("Temp.txt");
         }
 
-        // Works fine
+
+        
         public void DeleteBorrower(int borrowerId) {
 
             FileStream fin = new FileStream("Borrowers.txt", FileMode.Open ,FileAccess.Read);
@@ -464,7 +470,8 @@ namespace LibarayConsoleApplication
             Console.WriteLine($"\n Borrower having id {borrowerId} deleted!");
         }
 
-        // Book return issue
+
+        
         public void RecordTransaction(Transaction transaction)
         {
             // First checking if the BorrowId is valid or not
@@ -702,7 +709,8 @@ namespace LibarayConsoleApplication
             }
         }
         
-        // Works fine
+
+        
         public List<Book> GetBorrowedBooksByBorrower(int borrowerId)
         { 
             List<int> bookIds = new List<int>();
@@ -780,6 +788,7 @@ namespace LibarayConsoleApplication
         }
     }
 
+    
     class Program
     {
 
